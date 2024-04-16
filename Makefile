@@ -1,6 +1,6 @@
 # Executables (local)
 APP_NAME = upfronthr
-DOCKER_COMP = cd container && docker compose
+DOCKER_COMP = cd docker && docker compose
 
 # Docker containers
 PHP_CONT = $(DOCKER_COMP) exec upfronthr_php
