@@ -3,7 +3,7 @@
 In order to run the app, first you need a docker on your machine and after that:
 - backend
   - for building backend containers: `make build`
-  - for starting containers: `make up`
+  - for starting containers: `make up` (it will take a bit the first time.)
   - for creating fixtures: `make fixture`
   - for running test: `make test`
 
