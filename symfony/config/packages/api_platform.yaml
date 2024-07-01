@@ -1,11 +1,9 @@
 api_platform:
-    title: Kpler API Platform
+    title: Hubert Burda Media API Platform
     version: 1.0.0
     formats:
-        xml: ['application/xml']
-        csv: ['text/csv']
         jsonld: ['application/ld+json']
-        json:     ['application/json']
+        json:   ['application/json']
     docs_formats:
         jsonld: ['application/ld+json']
         jsonopenapi: ['application/vnd.openapi+json']

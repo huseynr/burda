@@ -38,7 +38,7 @@ sh: ## Connect to the FrankenPHP container
 
 test: ## Start tests with phpunit
 	@$(eval c ?=)
-	docker exec upfronthr_php bash -c "XDEBUG_MODE=coverage vendor/bin/phpunit"
+	docker exec upfronthr_php bash -c "vendor/bin/phpunit"
 
 
 ## —— Composer 🧙 ——————————————————————————————————————————————————————————————
@@ -59,5 +59,5 @@ cc: c=c:c ## Clear the cache
 cc: sf
 
 ## —— App ———————————————————————————————————————————————————————————————
-import:
-	docker exec upfronthr_php bash -c "php bin/console app:import-vessel-positions"
+fixture:
+	docker exec upfronthr_php bash -c "php bin/console hautelook:fixtures:load --append"
